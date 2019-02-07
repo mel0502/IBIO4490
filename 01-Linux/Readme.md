@@ -195,11 +195,17 @@ When you use this type of command at the start of scripts you are indicating the
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%204a.PNG)
 
-the disk size of the uncompressed dataset is 69112 MB
+The disk size of the uncompressed dataset is 69112 MB
 
 The number of images are in the directory is 500
 
 5. What are all the different resolutions? What is their format? Tip: use ``awk``, ``sort``, ``uniq`` 
+
+![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto5form.PNG)
+
+![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto5reso.PNG)
+
+The  format of the images is JPEG ande their resolutions are 321x481 and 481x321
 
 6. How many of them are in *landscape* orientation (opposed to *portrait*)? Tip: use ``awk`` and ``cut``
  
