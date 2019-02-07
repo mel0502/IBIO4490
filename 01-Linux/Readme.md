@@ -201,15 +201,32 @@ The number of images are in the directory is 500
 
 5. What are all the different resolutions? What is their format? Tip: use ``awk``, ``sort``, ``uniq`` 
 
-![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto5form.PNG)
+![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%205%20formato.PNG)
 
-![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto5reso.PNG)
+![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%205%20resolucion.PNG)
 
 The  format of the images is JPEG ande their resolutions are 321x481 and 481x321
 
 6. How many of them are in *landscape* orientation (opposed to *portrait*)? Tip: use ``awk`` and ``cut``
  
+ ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%206%201.PNG)
+
+![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%206%202.PNG)
+
+![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%206%203.PNG)
+
+![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%206%204.PNG)
+
+The number of landscapes is 348 and the number of portrait is 152
+ 
 7. Crop all images to make them square (256x256) and save them in a different folder. Tip: do not forget about  [imagemagick](http://www.imagemagick.org/script/index.php).
+
+![](ttps://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%207%20parte%201.PNG)
+
+![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%207%20codigo.PNG)
+
+![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%207%20respuesta.PNG)
+
 
 
 # Report
