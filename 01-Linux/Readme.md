@@ -182,11 +182,12 @@ Grep is an useful command  which can search for a text in a particular file.
 
 2. What is the meaning of ``#!/bin/python`` at the start of scripts?
 
-When you use this type of command at the start of scripts you are indicating the programming language that you want to use for run your  code. In this case, every single command that you write will be execute in python
+When you use this type of command at the start of scripts you are indicating the programming language that you want to use for run your  code. In this case, every single command that you write will be execute in python.
 
 3. Download using ``wget`` the [*bsds500*](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bsds500) image segmentation database, and decompress it using ``tar`` (keep it in you hard drive, we will come back over this data in a few weeks).
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%203a.PNG)
+
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%203b.PNG)
  
 4. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
@@ -195,9 +196,9 @@ When you use this type of command at the start of scripts you are indicating the
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%204a.PNG)
 
-The disk size of the uncompressed dataset is 69112 MB
+The disk size of the uncompressed dataset is 69112 MB.
 
-The number of images are in the directory is 500
+There are 500 images in the directory.
 
 5. What are all the different resolutions? What is their format? Tip: use ``awk``, ``sort``, ``uniq`` 
 
@@ -217,7 +218,7 @@ The  format of the images is JPEG ande their resolutions are 321x481 and 481x321
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%206%204.PNG)
 
-The number of landscapes is 348 and the number of portrait is 152
+There are 348 landscapes and 152 portraits in the directory.
  
 7. Crop all images to make them square (256x256) and save them in a different folder. Tip: do not forget about  [imagemagick](http://www.imagemagick.org/script/index.php).
 
