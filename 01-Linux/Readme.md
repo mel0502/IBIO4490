@@ -178,11 +178,11 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%201.PNG)
 
-Grep is an useful command  which can search for a text in a particular file.
+``Grep`` is an useful command which can search for a text in a particular file. Additionally, this tool accepts various command line arguments. 
 
 2. What is the meaning of ``#!/bin/python`` at the start of scripts?
 
-When you use this type of command at the start of scripts you are indicating the programming language that you want to use for run your  code. In this case, every single command that you write will be execute in python.
+``#!/bin/python``: When you use this type of command at the start of scripts you are indicating the programming language that you want to use for run your  code. In this case, every single command that you write will be execute in python.
 
 3. Download using ``wget`` the [*bsds500*](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bsds500) image segmentation database, and decompress it using ``tar`` (keep it in you hard drive, we will come back over this data in a few weeks).
 
