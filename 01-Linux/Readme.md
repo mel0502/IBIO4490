@@ -194,13 +194,11 @@ To download [*bsds500*] from the berkeley database we use the ``wget`` command a
  
 4. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
 
+Once the BSR folder was decompressed, the ``du`` command was used to show the total space occupied by the folder. However, this command alone can not obtain the result in the command window, so the ``-hs`` command is used to obtain a numeric format. In this case, the disk size of the uncompressed dataset is 73 MB. This folder contains several types of files but we focus specifically on 'BSR / BSDS500 / data / images' which has the test, validation and train images. Finally, by using the ``find``, ``identify``, ``grep`` and ``wc`` command we obtained 500 images in the directory.
+
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%204b2.PNG)
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%204a.PNG)
-
-The disk size of the uncompressed dataset is 69112 MB.
-
-There are 500 images in the directory.
 
 5. What are all the different resolutions? What is their format? Tip: use ``awk``, ``sort``, ``uniq`` 
 
