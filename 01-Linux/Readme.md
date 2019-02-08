@@ -194,7 +194,7 @@ To download [*bsds500*] from the berkeley database we use the ``wget`` command a
  
 4. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
 
-![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%204b.PNG)
+![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%204b2.PNG)
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%204a.PNG)
 
