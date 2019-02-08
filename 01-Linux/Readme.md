@@ -220,9 +220,10 @@ For the practical development of this exercise, a set of steps was carried out, 
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%206%204.PNG)
 
-There are 348 landscapes and 152 portraits in the directory.
  
 7. Crop all images to make them square (256x256) and save them in a different folder. Tip: do not forget about  [imagemagick](http://www.imagemagick.org/script/index.php).
+
+In order to crop all images to make them square (256x256) and save them in a different folder we need different types of cycles to be able to store and cut the data base. In first instance, it is of vital importance to clarify that to be such a long process a script from ssh was preferred because there were going to be many procedures as a whole. Now, initially i created a folder called cropi_images which will stored the cut images. Secondly, it was created within this folder the replicas of the folder of images and their respective sections like test, validation and train. Then, a "for" was made which allowed to store the images that belonged to a repsective folder and by using the ``crop`` command it was readjusted its size to 256x256. The procedure described above was carried out with the three subfolders mentioned. Additionally, the ``convert`` command was used to establish the cutting measurements.
 
 ![](ttps://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%207%20parte%201.PNG)
 
