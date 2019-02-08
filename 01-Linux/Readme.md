@@ -176,7 +176,7 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 1. What is the ``grep``command?
 
-``Grep`` is an useful command which can search for a text in a particular file. Additionally, this tool accepts various command line arguments. 
+``Grep`` is an useful command which can search for a text in a particular file. Additionally, this tool accepts various command line arguments. [1]
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%201.PNG)
 
@@ -186,7 +186,7 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 3. Download using ``wget`` the [*bsds500*](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bsds500) image segmentation database, and decompress it using ``tar`` (keep it in you hard drive, we will come back over this data in a few weeks).
 
-To download [*bsds500*] from the berkeley database we use the ``wget`` command as shown in image 1. However, this type of process results in a compressed file of type tgz, which was decompressed with the ``tar`` command and ``-xzvf`` as shown in image 2.
+To download [*bsds500*] from the berkeley database we use the ``wget`` command as shown in image 1. However, this type of process results in a compressed file of type tgz, which was decompressed with the ``tar`` command and ``-xzvf`` as shown in image 2. [2]
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%203a.PNG)
 
@@ -194,7 +194,7 @@ To download [*bsds500*] from the berkeley database we use the ``wget`` command a
  
 4. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
 
-Once the BSR folder was decompressed, the ``du`` command was used to show the total space occupied by the folder. However, this command alone can not obtain the result in the command window, so the ``-hs`` command is used to obtain a numeric format. In this case, the disk size of the uncompressed dataset is 73 MB. This folder contains several types of files but we focus specifically on 'BSR / BSDS500 / data / images' which has the test, validation and train images. Finally, by using the ``find``, ``identify``, ``grep`` and ``wc`` command we obtained 500 images in the directory.
+Once the BSR folder was decompressed, the ``du`` command was used to show the total space occupied by the folder. However, this command alone can not obtain the result in the command window, so the ``-hs`` command is used to obtain a numeric format. In this case, the disk size of the uncompressed dataset is 73 MB.[3] This folder contains several types of files but we focus specifically on 'BSR / BSDS500 / data / images' which has the test, validation and train images. Finally, by using the ``find``, ``identify``, ``grep`` and ``wc`` command we obtained 500 images in the directory.
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%204b2.PNG)
 
@@ -202,7 +202,7 @@ Once the BSR folder was decompressed, the ``du`` command was used to show the to
 
 5. What are all the different resolutions? What is their format? Tip: use ``awk``, ``sort``, ``uniq`` 
 
-Initially, to find the different formats of the images obtained in the data folder, the ``awk``, ``sort`` and ``uniq`` commands were used. On the one hand, once we identified the images of type jpg in the folder using the identify and find commands as shown in the previous point, we used ``awk`` to specify the type of information that we wanted to extract from the images. For this first point, the format of the images was in the second column. Subsequently, the information was organized with the command ``sort``, and then with ``uniq`` we omit the repeated information of the images. As a result of the process described abovefor a JPEG format was obtained for all the images. Also, applying the method described above to the second question, the resolutions of images is 321x481 and 481x321.
+Initially, to find the different formats of the images obtained in the data folder, the ``awk``, ``sort`` and ``uniq`` commands were used. On the one hand, once we identified the images of type jpg in the folder using the identify and find commands as shown in the previous point, we used ``awk`` to specify the type of information that we wanted to extract from the images. For this first point, the format of the images was in the second column. Subsequently, the information was organized with the command ``sort``, and then with ``uniq`` we omit the repeated information of the images. [4] As a result of the process described abovefor a JPEG format was obtained for all the images. Also, applying the method described above to the second question, the resolutions of images is 321x481 and 481x321.
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%205%20formato.PNG)
 
@@ -223,15 +223,25 @@ For the practical development of this exercise, a set of steps was carried out, 
  
 7. Crop all images to make them square (256x256) and save them in a different folder. Tip: do not forget about  [imagemagick](http://www.imagemagick.org/script/index.php).
 
-In order to crop all images to make them square (256x256) and save them in a different folder we need different types of cycles to be able to store and cut the data base. In first instance, it is of vital importance to clarify that to be such a long process a script from ssh was preferred because there were going to be many procedures as a whole. Now, initially i created a folder called cropi_images which will stored the cut images. Secondly, it was created within this folder the replicas of the folder of images and their respective sections like test, validation and train. Then, a "for" was made which allowed to store the images that belonged to a repsective folder and by using the ``crop`` command it was readjusted its size to 256x256. The procedure described above was carried out with the three subfolders mentioned. Additionally, the ``convert`` command was used to establish the cutting measurements.
+In order to crop all images to make them square (256x256) and save them in a different folder we need different types of cycles to be able to store and cut the data base. In first instance, it is of vital importance to clarify that to be such a long process a script from ssh was preferred because there were going to be many procedures as a whole. Now, initially i created a folder called cropi_images which will stored the cut images. Secondly, it was created within this folder the replicas of the folder of images and their respective sections like test, validation and train. Then, a "for" was made which allowed to store the images that belonged to a repsective folder and by using the ``crop`` command it was readjusted its size to 256x256. The procedure described above was carried out with the three subfolders mentioned [5] . Additionally, the ``convert`` command was used to establish the cutting measurements.
 
-![](ttps://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%207%20parte%201.PNG)
+![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%207%20parte.PNG)
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%207%20codigo.PNG)
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%207%20respuesta.PNG)
 
+# References
 
+[1]"How to Search for Files and Folders via SSH", Website Tutorials - Find Out How to Use the Most Popular Web Apps, 2019. [Online]. Available: https://www.siteground.com/tutorials/ssh/searching/. [Accessed: 08- Feb- 2019].
+
+[2]"How to Extract and Create Archives via SSH", Website Tutorials - Find Out How to Use the Most Popular Web Apps, 2019. [Online]. Available: https://www.siteground.com/tutorials/ssh/archives/. [Accessed: 08- Feb- 2019].
+
+[3]"SSH du command - Check Disk & Space Usage on your Servers or VPS", WebHostFace KnowledgeBase, 2019. [Online]. Available: https://www.webhostface.com/kb/knowledgebase/ssh-du-command/. [Accessed: 08- Feb- 2019].
+
+[4]"Manipulate Lists with sort and uniq", Linode Guides & Tutorials, 2019. [Online]. Available: https://www.linode.com/docs/tools-reference/tools/manipulate-lists-with-sort-and-uniq/. [Accessed: 08- Feb- 2019].
+
+[5]C. Only, J. Vlijm and M. Thoma, "Cropping Images using Command Line Tools Only", Ask Ubuntu, 2019. [Online]. Available: https://askubuntu.com/questions/631689/cropping-images-using-command-line-tools-only. [Accessed: 08- Feb- 2019].
 
 # Report
 
