@@ -186,6 +186,8 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 3. Download using ``wget`` the [*bsds500*](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bsds500) image segmentation database, and decompress it using ``tar`` (keep it in you hard drive, we will come back over this data in a few weeks).
 
+To download [*bsds500*] from the berkeley database we use the ``wget`` command as shown in image 1. However, this type of process results in a compressed file of type tgz, which was decompressed with the ``tar`` command and ``-xzvf`` as shown in image 2.
+
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%203a.PNG)
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%203b.PNG)
