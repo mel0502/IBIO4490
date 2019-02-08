@@ -176,9 +176,9 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 1. What is the ``grep``command?
 
-![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%201.PNG)
-
 ``Grep`` is an useful command which can search for a text in a particular file. Additionally, this tool accepts various command line arguments. 
+
+![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%201.PNG)
 
 2. What is the meaning of ``#!/bin/python`` at the start of scripts?
 
@@ -209,6 +209,8 @@ Initially, to find the different formats of the images obtained in the data fold
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%205%20resolucion.PNG)
 
 6. How many of them are in *landscape* orientation (opposed to *portrait*)? Tip: use ``awk`` and ``cut``
+
+For the practical development of this exercise, a set of steps was carried out, which can be divided into four stages. First of all, folders were created which will store landscape and portrait images. Subsequently, all the images of the database were saved in a variable called carpeta to perform a cycle. Then, a "for" was made to identify the resolution of each image on the folder variable. Finally, if the image complied with the resolutions described in the cycle, it was kept in its respective folder. Applying the method described above, 348 landscapes and 152 portraits were obtained in each of the folders.
  
  ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%206%201.PNG)
 
