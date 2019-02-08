@@ -202,11 +202,11 @@ Once the BSR folder was decompressed, the ``du`` command was used to show the to
 
 5. What are all the different resolutions? What is their format? Tip: use ``awk``, ``sort``, ``uniq`` 
 
+Initially, to find the different formats of the images obtained in the data folder, the ``awk``, ``sort`` and ``uniq`` commands were used. On the one hand, once we identified the images of type jpg in the folder using the identify and find commands as shown in the previous point, we used ``awk`` to specify the type of information that we wanted to extract from the images. For this first point, the format of the images was in the second column. Subsequently, the information was organized with the command ``sort``, and then with ``uniq`` we omit the repeated information of the images. As a result of the process described abovefor a JPEG format was obtained for all the images. Also, applying the method described above to the second question, the resolutions of images is 321x481 and 481x321.
+
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%205%20formato.PNG)
 
 ![](https://github.com/mel0502/IBIO4490/blob/master/01-Linux/punto%205%20resolucion.PNG)
-
-The  format of the images is JPEG ande their resolutions are 321x481 and 481x321
 
 6. How many of them are in *landscape* orientation (opposed to *portrait*)? Tip: use ``awk`` and ``cut``
  
